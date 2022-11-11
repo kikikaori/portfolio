@@ -13,10 +13,10 @@ class Cat {
     move(){
         this.x = this.x += 50*2;
 
-        if (this.x >= 400 && this.x == 400){
+        if (this.x >= 400 && this.x == windowWidth){
                 this.x = 50;
                 this.y = this.y += 50;
-            } if ( this.x >= 400 ) {
+            } if ( this.x >= windowWidth ) {
                 this.x = 0;
                 this.y = this.y += 50;
             }
@@ -28,7 +28,7 @@ class Cat {
 
     draw(){
         image(img,this.x,this.y);
-        
+
     }
 
 }
@@ -43,16 +43,14 @@ function preload() {
 
 function setup(){
     img.resize(50,50);
-    canvas = createCanvas(400,400);
-    
+    canvas = createCanvas(windowWidth, windowHeight);
 }
 
 const cat = new Cat(0,0);
 cats.push(cat);
 
 function draw(){
-    let fs = fullscreen();
-    fullscreen(!fs);
+    
     for ( let a of cats){
     a.draw();
     a.move();}
