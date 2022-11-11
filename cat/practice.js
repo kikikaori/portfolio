@@ -28,6 +28,7 @@ class Cat {
 
     draw(){
         image(img,this.x,this.y);
+        fullscreen();
     }
 
 }
