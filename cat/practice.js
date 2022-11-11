@@ -14,11 +14,11 @@ class Cat {
     move(){
         this.x = this.x += 50*2;
 
-        if (this.x >= windowWidth && this.x == windowWidth && b == 0){
+        if (this.x >= windowWidth &&  b == 0){
                 this.x = 50;
                 this.y = this.y += 50;
                 b = 1;
-            } if ( this.x >= windowWidth ) {
+            } if ( this.x >= windowWidth && b == 1 ) {
                 this.x = 0;
                 this.y = this.y += 50;
                 b = 0;
