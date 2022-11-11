@@ -41,8 +41,10 @@ footer{
   }
   ul {
     font-size: 20px;
-    text-align: center;
     list-style: none;
+    width: fit-content;
+    margin: auto;
   }
 }
+
 
