@@ -18,7 +18,7 @@ class Cat {
                 this.x = 50;
                 this.y = this.y += 50;
                 b = 1;
-            } if ( this.x >= windowWidth && b == 1 ) {
+            } else if ( this.x >= windowWidth && b == 1 ) {
                 this.x = 0;
                 this.y = this.y += 50;
                 b = 0;
