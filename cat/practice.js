@@ -28,7 +28,7 @@ class Cat {
 
     draw(){
         image(img,this.x,this.y);
-        fullscreen();
+        
     }
 
 }
@@ -51,9 +51,12 @@ const cat = new Cat(0,0);
 cats.push(cat);
 
 function draw(){
+    let fs = fullscreen();
+    fullscreen(!fs);
     for ( let a of cats){
     a.draw();
     a.move();}
+
 }
 
 
