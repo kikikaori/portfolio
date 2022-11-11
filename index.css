@@ -2,8 +2,35 @@
     /* background: red; */
 }
 h1{
-  background: green;
+  font-size: width / 3;
+  font-weight: bold;
+  color: white;
+  background-color: silver;
+  padding: 10px;
+  font-family: "Nico Moji";
+  text-align: center;
+  border-radius: 10px;
 }
+ul{
+  font-size: width / 5;
+  color: pink;
+  font-family: "Nico Moji";
+  list-style-type: square;
+}
+::selection {
+  color: white;
+  background-color: pink;
+}
+a,header,footer{
+  color: pink;
+  font-family: "Nico Moji";
+  text-align: center;
+}
+a:hover{
+  color: gray;
+}
+
 footer{
-    background: yellowgreen;
+    background: silver;
+    border-radius: 10px;
 }
